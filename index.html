@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <html lang="pt-BR">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="bootstrap-4.2.1/css/bootstrap.css">
+    <link rel="stylesheet" href="css/cadastro.css">
+    <title>Cadastro</title>
+</head>
+<body>
+    <!--inicio modal-->
+    <div class="modal fade" id="exampleModalScrollable" tabindex="-1" role="dialog" aria-labelledby="exampleModalScrollableTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-scrollable" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- fim modal-->
+ <div class="container-fluid">
+    <fieldset class="fieldset">
+    <legend class="legenda"> Cadastro:</legend>
+    <div class="row">
+        <div class="form col-sm-7">
+            <form  id="form-cadastro">
+                <div class="form-group col-12">
+                    <label for="form-nome"> Nome</label> 
+                    <input type="text" class="form-control" id="form-nome">
+                </div> 
+                <div class="form-group col-12">
+                    <label for="form-cpf">CPF</label>
+                    <input type="text" class="form-control" id="form-cpf">
+                </div>  
+                <div class="form-group col-12">
+                    <label class=""  for="form-email">E-mail</label>
+                    <div class="input-group mb-2">
+                        <div class="input-group-prepend">
+                            <div class="input-group-text">@</div>
+                         </div>
+                        <input type="email" class="form-control" id="form-email" placeholder="">
+                    </div>
+                </div>    
+                <div class="form-group col-12">
+                    <label for="form-data">Data de Nascimento</label>
+                    <input type="date" class="form-control" id="form-data" >
+                </div>  
+                <div class="form-group col-12">
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="1" checked>
+                        <label class="form-check-label" for="inlineRadio1">Feminino</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="2">
+                        <label class="form-check-label" for="inlineRadio2">Masculino</label>
+                    </div>
+                </div>
+                <div class="form-group  col-12">
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <label for="form-senha">Senha</label>
+                            <input type="password" class="form-control" id="form-senha" >
+                        </div> 
+                        <div class="form-group col-sm-6">
+                            <label for="form-confirmar-senha">Confirmar Senha</label>
+                            <input type="password" class="form-control" id="form-confirmar-senha" >
+                        </div> 
+                    </div>
+                </div>
+                <div class="form-group col-12">
+                    <div class="row">
+                        <div class="col-6">
+                            <input class="btn  btn-outline-success btn-block" type="submit" value="confirmar">
+                        </div>
+                        <div class="col-6">
+                            <input class="btn  btn-outline-info btn-block" type="reset" value="cancelar">
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+        <div class="col-sm-5  text-center">
+            <svg class="categoria-icon"><use xlink:href="icon-svg/categorias.svg#user"/></svg>
+        </div>
+    </div>
+    </fieldset>
+</div>
+<script src="js/jquery-2.1.1-jquery.min.js"></script>
+<script src="js/jquery.mask.min.js"></script>
+<script src="bootstrap-4.2.1/js/bootstrap.js"></script>
+<script src="js/validacao.js"></script>
+<script src="js/mascara.js"></script>
+</body>
+</html>
